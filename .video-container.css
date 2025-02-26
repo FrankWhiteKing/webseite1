@@ -1,0 +1,24 @@
+
+
+.video-container {
+    position: fixed;  /* Fixiert das Video im Hintergrund */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Zentriert das Video */
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;  /* Dehnt das Video auf die volle Breite aus */
+    height: 100%;  /* Dehnt das Video auf die volle Höhe aus */
+    object-fit: cover; /* Stellt sicher, dass das Video das ganze Fenster ausfüllt */
+}

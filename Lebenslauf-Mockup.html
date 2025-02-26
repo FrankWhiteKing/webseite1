@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf Mockup</title>
+    <link rel="stylesheet" href="Effekt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@512&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #f8f8f8;
+            margin: 0;
+            padding:0;
+            width: 100%;
+            height:100%;
+    
+
+           
+        }
+        .video-container {
+    position: fixed;  /* Fixiert das Video im Hintergrund */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(3);
+}
+
+.video-container video {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Zentriert das Video */
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;  /* Dehnt das Video auf die volle Breite aus */
+    height: 100%;  /* Dehnt das Video auf die volle Höhe aus */
+    object-fit: cover; /* Stellt sicher, dass das Video das ganze Fenster ausfüllt */
+    }   
+        
+        
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #ffffff;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            width: 100%;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            line-height: 0.40em;
+            outline: none;
+            animation: animate 5s linear infinite;}
+            
+            
+            .container {
+                position: absolute;
+                 top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                
+         }
+        
+         @media (max-width: 1024px) {
+            main {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+            }
+            .image-container {
+                margin-top: 20px;
+            }
+        }
+       
+       
+       
+ 
+
+
+     
+        .header p {
+            margin: 5px 0;
+            font-size: 13px;
+}
+
+        .section {
+            margin-bottom: 30px;
+            }
+
+        .section h2 {
+            font-size: 20px;
+             color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+             margin-bottom: 15px;
+                }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 7px;
+            line-height: 1.6;
+            font-size: 12px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;}
+    
+  
+
+
+   </style>
+    <script>
+        function downloadResume() {
+            const element = document.createElement('a');
+            element.href = 'Lebenslauf_LS.pdf'; 
+            element.download = 'Lebenslauf_LS.pdf';
+            element.click();
+       
+        }
+
+        function printResume() {
+            window.print();
+        
+
+        }
+    
+
+        
+ 
+ 
+ 
+ </script>
+</head>
+<body>
+
+    </div>
+    <div class="video-container">
+    <video autoplay loop muted>
+    <source src="Gruencyber.mp4" type="video/mp4">
+   
+    </video>
+    </div>
+     
+     <div class="header">
+        <img src="leonardo.jpg" alt="Profilbild">
+        <h1>Leonardo Stevanovic</h1> <br>
+        <p>Anschrift: Glasgowerstr. 18, 13349 Berlin</p>
+        <p>Geboren: 19.06.2001</p>
+        <p>Telefon: 0173 451 8804 | E-Mail: Leonardostevanovic@hotmail.com</p>
+
+     
+    </div>
+    <div class="section">
+            <h2>Praktische Erfahrung</h2>
+            <ul>
+                <li><strong>Seit 06/2024</strong> - Teilnehmer bei der Joblinge gAG Berlin<br>
+                    <i>Eine Initiative der Boston Consulting Group und der Eberhart von Kuehnheim Stiftung von BMW</i></li>
+                <li><strong>09/2022 – 12/2022</strong> - Ausbildung als Elektroniker für Betriebstechnik bei Profine GmbH, Berlin<br>
+                    <i>Installations- und Leiterplattentechnik, Erstellen von Schaltplänen, Wandmontage von Steckdosen, Schaltern, Lampen und Klingeln, Löten von Bauteilen wie Kondensatoren</i></li>
+                <li><strong>08/2021</strong> - Zweiwöchiges Praktikum als Tiefbauer bei Werner Pletz GmbH, Berlin<br>
+                    <i>Unterstützung bei Rohrverlegung und Grabungsarbeiten</i></li>
+                <li><strong>10/2019 – 11/2020</strong> - Einmonatiges Praktikum als Einzelhandelskaufmann bei Alnatura, Berlin<br>
+                    <i>Waren einräumen und sortieren, Kunden beraten</i></li>
+                <li><strong>03/2018 – 04/2018</strong> - Zweiwöchiges Praktikum als Zweiradmechaniker bei Francis Fahrradservice, Berlin<br>
+                    <i>Fahrradteile wie Reifen, Blinker, Pedale und Kleinkomponenten montieren und demontieren</i></li>
+                <li><strong>06/2017 – 06/2017</strong> - Zweiwöchiges Praktikum als Einzelhandelskaufmann bei Mäc Geiz, Berlin<br>
+                    <i>Waren einräumen und sortieren, Kunden beraten</i></li>
+            </ul>
+        </div>
+            <div class="section">
+            <h2>Schulbildung</h2>
+            <ul>
+                <li><strong>08/2019 – 07/2020</strong> - OSZ Kommunikations-, Informations- Medientechnik, Berlin<br>
+                    <i>Schulabschluss: Mittlerer Schulabschluss (MSA)</i></li>
+                <li><strong>08/2008 – 07/2015</strong> - Gesundbrunnen Grundschule, Berlin</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Interessen und Fähigkeiten</h2>
+            <ul>
+                <li><strong>Sprachen:</strong> Deutsch – Muttersprache, Englisch – Sehr gute Kenntnisse in Wort und Schrift, Serbisch – Grundkenntnisse</li>
+                <li><strong>IT-Kenntnisse:</strong> Microsoft Office (Word, Excel, PowerPoint), 10 Finger schreiben, Edraw (Electrical Drawing Software), Powerdirection (Videobearbeitungsprogramm)</li>
+                <li><strong>Hobbys:</strong> Computer zusammenbauen, Gaming</li>
+            </ul>
+       
+    
+        </div>
+        <div class="button-container">      
+            
+           
+            <button class="button" onclick="downloadResume()">Herunterladen</button>
+            <button class="button" onclick="printResume()">Drucken</button>
+        </div>
+
+        
+             
+               <div class="footer">
+            <p>Berlin, im Juni 2024</p>
+            <p><strong>Leonardo Stevanovic</strong></p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
+
+
+

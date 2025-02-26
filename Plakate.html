@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Projekte</title>
+    <link rel="stylesheet" href=".video-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="testing-schrift.css">
+    <style>
+        body {
+            font-family: "Roboto Condensed", serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            color: #fdfdfd;
+        
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .project {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            justify-content: flex-start;
+            opacity: 0.5;
+        }
+        .project img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            
+        }
+        .text-box {
+            margin-left: 100px; /* Vergrößerter Abstand nach rechts */
+            text-align: left;
+            max-width: 500px; /* Breitere Textbox */
+            flex: 1;
+        }
+        .text-box h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);  
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: orange;
+            color: rgb(7, 7, 7);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .text-box p {
+            color: rgb(255, 255, 255);
+            font-size: 22px;
+            font-weight: bold;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Meine Projekte</h1>
+    <div class="container">
+        <div class="project">
+            <img src="mein-plakat.jpg"alt="projekt">
+            <div class="text-box">
+                <h2> Lackierer</h2>
+                <p>Dieses mit  erstellte Plakat von mir wirbt für den Beruf des Lackierers. <br> Die Schutzausrüstung und Lackierpistole symbolisieren Präzision und Handwerk, <br> während die dynamische Gestaltung die kreative Seite des Berufs betont..</p>
+                <a href="mein-plakat.jpg" download class="download-button">Bild herunterladen</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="GBA-Spiele.png" alt="Projekt 2">
+            <div class="text-box">
+                <h2>Konsolen</h2>
+                <p>Dieses mit Canva erstellte Bild zeigt eine Übersicht über Spieleplattformen wie Nintendo DS, GBA, PS2 und PS3. br Es enthält Angaben zur Spielanzahl und Datenmenge, gestaltet mit einem blauen Hintergrund und passenden Symbolen.</p>
+                <a href="GBA-Spiele.png" download class="download-button">Bild herunterladen</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="cHECK_lIST_fertig.png" alt="Projekt 3">
+            <div class="text-box">
+                <h2>Medizin</h2>
+                <p>Dieses mit Canva erstellte Bild zeigt eine Checkliste für den Rachenabstrich. In mehreren Abschnitten werden Material, <br> Vorbereitung, Durchführung und Nachbereitung übersichtlich erklärt. <br> Medizinische Symbole und ein klares Design unterstützen die Darstellung..</p>
+                <a href="cHECK_lIST_fertig.png" download class="download-button">Bild herunterladen</a>
+            </div>
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Gruencyber.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+</body>
+</html>
